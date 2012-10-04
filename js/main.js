@@ -25,14 +25,14 @@ var TILE_URLS = [
     "https://fedoraproject.org/w/uploads/thumb/9/93/F14-final-wallpaper-updated.png/800px-F14-final-wallpaper-updated.png"
 ];
 
-
+// This is probably all you need to edit
 var TRANSITION_INTERVAL = 4000;
 var TRANSITION_DURATION = 2000;
 var ANIMATION_DURATION = 1000;
 var ANIMATION_INTERVAL = 10000;
+var N_TILES_Y = 3;
 
 var TILE_X_PROPORTION = -1;
-var N_TILES_Y = 3;
 var TILE_Y_PROPORTION = 1 / N_TILES_Y;
 var N_TILES_X = -1;
 var N_TILES = -1;
