@@ -1,0 +1,55 @@
+html, body, #container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #333;
+    overflow: hidden;
+}
+
+#container {
+    width: 300%;
+}
+
+.shadow {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background-color: #000;
+    z-index: 999;
+    box-shadow: 0 0 200px 100px #000;
+}
+
+.left.shadow {
+    left: -10px;
+}
+
+.right.shadow {
+    right: -10px;
+}
+
+body {
+    white-space: nowrap;
+}
+
+.tile, .tile-container {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    white-space: normal;
+}
+
+.tile-container {
+    height: 100%;
+}
+
+.tile > iframe {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: none;
+}
+
+.tile {
+    background-color: #000;
+}
