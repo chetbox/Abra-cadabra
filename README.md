@@ -13,8 +13,7 @@ You can also configure a variety of diplay paramters:
 
     TRANSITION_INTERVAL - how often the tiles scroll
     TRANSITION_DURATION - how fast the tiles scroll
-    ANIMATION_INTERVAL - how often to show random animations of tiles
-    ANIMATION_DURATION - how fast each random animation should be
+    ANIMATION_DURATION - how fast the random animation of a tile should be after a transition (set this to 0 to disable the animations)
     N_TILES_Y - the number of tiles to fit onto the screen vertically
   
 ## Limitations

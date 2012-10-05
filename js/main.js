@@ -29,7 +29,6 @@ var TILE_URLS = [
 var TRANSITION_INTERVAL = 4000;
 var TRANSITION_DURATION = 2000;
 var ANIMATION_DURATION = 1000;
-var ANIMATION_INTERVAL = 10000;
 var N_TILES_Y = 3;
 
 var TILE_X_PROPORTION = -1;
@@ -68,6 +67,7 @@ function create_tile(parent, width, tile_number) {
 }
 
 function transition(container) {
+    var animation_set = false;
 
     var to_move = $('.tile-container')
     var displacement = - to_move.first().outerWidth(true)
@@ -81,7 +81,12 @@ function transition(container) {
                 }, 0)
                 .first()
                     .appendTo(container)
-            
+
+            if ( !animation_set && ANIMATION_DURATION > 0 ) {
+                animate_random();
+                animation_set = true;
+            }
+
         })
 }
 
@@ -112,11 +117,9 @@ function set_dimensions(container) {
     
 }
 
-
-
 function animate_random() {
     var animation = ANIMATIONS[Math.floor(Math.random() * ANIMATIONS.length)];
-    var potential_tiles = $('.tile-container').slice(1, -1).find('.tile')
+    var potential_tiles = $('.tile-container').slice(1, -2).find('.tile')
     var tile = potential_tiles[Math.floor(Math.random() * potential_tiles.length)];
     
     console.log(tile)
@@ -148,11 +151,7 @@ $(function() {
     if (TRANSITION_INTERVAL) {
         setInterval(function() { transition(container) }, TRANSITION_INTERVAL);
     }
-    
-    if (ANIMATION_INTERVAL) {
-        setInterval(animate_random, ANIMATION_INTERVAL)
-    }
-    
+
     $(window).resize(function() { set_dimensions(container) })
     
 });
