@@ -39,7 +39,7 @@ var ANIMATIONS = [
     { animate: { rotateX: '360deg' }, reverse: { rotateX: '0deg' } },
     { animate: { rotateX: '-360deg' }, reverse: { rotateX: '0deg' } },
     { animate: { rotateY: '360deg' }, reverse: { rotateY: '0deg' } },
-    { animate: { rotateX: '-360deg' }, reverse: { rotateY: '0deg' } },
+    { animate: { rotateY: '-360deg' }, reverse: { rotateY: '0deg' } },
     { animate: { rotate: '360deg' }, reverse: { rotate: '0deg' } },
     { animate: { rotate: '-360deg' }, reverse: { rotate: '0deg' } },
 ]
