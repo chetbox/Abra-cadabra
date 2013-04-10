@@ -2,6 +2,9 @@
 
 Abra-cadabra is a scrolling mosaic that sits in your browser written in Javascript. 
 It's perfect for simultaneous demos of images, web pages or just about anything your browser can render.
+By default a random tile whizzes round after each transition.
+
+![Abra-cadabra screenshot](https://raw.github.com/chetbox/Abra-cadabra/master/doc/screenshot.png)
 
 ## Configuration: js/main.js
 
@@ -29,3 +32,4 @@ This has only been tested in Google Chrome. You have been warned.
 ## Got it?
 
 That's it! Enjoy. =)
+![My image](username.github.com/repository/img/image.jpg)
