@@ -1,4 +1,4 @@
-html, body, #container {
+html, body, #abracadabra-container {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -6,7 +6,7 @@ html, body, #container {
     overflow: hidden;
 }
 
-#container {
+#abracadabra-container {
     width: 300%;
 }
 
